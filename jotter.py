@@ -66,4 +66,3 @@ class OpenInboxCommand(sublime_plugin.ApplicationCommand):
         root = get_root()
         inbox = os.path.join(root, brain_dir(), 'Inbox.note')
         sublime.active_window().open_file(inbox)
-
