@@ -13,9 +13,9 @@ from datetime import datetime
 
 class NoteTodoPendingCommand(sublime_plugin.TextCommand):
     def run(self, edit):
-        self.open_tasks_bullet = "☐"
-        self.done_tasks_bullet = "✔"
-        self.canc_tasks_bullet = "✘"
+        self.open_tasks_bullet = "[ ]"
+        self.done_tasks_bullet = "[x]"
+        self.canc_tasks_bullet = "[-]"
         self.before_tasks_bullet_spaces = ""
 
         selections = list(self.view.sel()) # for ST3 support
